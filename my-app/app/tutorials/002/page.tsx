@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Single Button",
+};
+
 function MyButton() {
   return <button className="border-4 border-black">I'm a button</button>;
 }

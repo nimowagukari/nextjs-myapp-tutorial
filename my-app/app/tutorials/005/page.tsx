@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hello World",
+  title: "Passing handler as a component argument",
 };
 
 export default function Page() {
