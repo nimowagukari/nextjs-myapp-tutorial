@@ -1,17 +1,14 @@
 import Link from "next/link";
+import process from "process";
+import fs from "fs";
 
-const tutorial_links = [
-  { id: 1, href: "./tutorials/001" },
-  { id: 2, href: "./tutorials/002" },
-  { id: 3, href: "./tutorials/003" },
-  { id: 4, href: "./tutorials/004" },
-];
+const tutorial_links = fs.readdirSync(process.cwd() + "/app/tutorials");
 
 export default function Page() {
   const listItems = tutorial_links.map((link) => {
     return (
-      <li key={link.id}>
-        <Link href={link.href}>tutorial{link.id}</Link>
+      <li key={link}>
+        <Link href={"/tutorials/" + link}>tutorial{link}</Link>
       </li>
     );
   });
