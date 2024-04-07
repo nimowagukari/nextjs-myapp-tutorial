@@ -1,27 +1,16 @@
-"use client";
+import { Metadata } from "next";
+import ButtonWithHandler from "./func";
 
-function MyButton({ name, handler }) {
-  return (
-    <button className="my-2 border-2 border-black block" onClick={handler}>
-      {name}
-    </button>
-  );
-}
+export const metadata: Metadata = {
+  title: "Passing handler as a component argument",
+};
 
 export default function Page() {
-  function handleClick(e: PointerEvent) {
-    alert(e.target.textContent);
-  }
-
   return (
     <>
       <h1>Passing handler as a component argument.</h1>
       <div className="mx-3 my-5">
-        <MyButton name="buttonA" handler={handleClick} />
-        <MyButton
-          name="buttonB"
-          handler={(e) => console.log(e.target.textContent)}
-        />
+        <ButtonWithHandler />
       </div>
     </>
   );
