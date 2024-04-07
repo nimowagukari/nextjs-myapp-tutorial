@@ -16,7 +16,9 @@
 			"extensions": [
 				"esbenp.prettier-vscode",
 				"dbaeumer.vscode-eslint",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"yzhang.markdown-all-in-one",
+				"DavidAnson.vscode-markdownlint"
 			]
 		}
 	}
