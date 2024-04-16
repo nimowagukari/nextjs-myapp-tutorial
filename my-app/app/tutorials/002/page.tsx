@@ -1,11 +1,18 @@
 import { Metadata } from "next";
+import { Button } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "Single Button",
 };
 
 function MyButton() {
-  return <button className="border-4 border-black">I'm a button</button>;
+  return (
+    <>
+      <Button variant="text">text button</Button>
+      <Button variant="contained">contained button</Button>
+      <Button variant="outlined">outlined button</Button>
+    </>
+  );
 }
 
 export default function Page() {
