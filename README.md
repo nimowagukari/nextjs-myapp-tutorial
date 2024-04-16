@@ -8,6 +8,7 @@
 
 - [x] markdown 系の Extension 追加
 - [ ] Material Design を試す
+  - [x] Button
 
 ### Tailwind CSS
 
@@ -24,6 +25,7 @@
 - [x] コンポーネント引数に handler を渡す
 - [x] クライアントコンポーネント境界でファイルを分ける
 - [x] ページごとにタイトルを変える
+- [x] Image コンポーネントを試す
 - [ ] useState 弄くり倒す
 - [ ] tutorials ページ共通の概要コンポーネントを追加
   - ページ概要
