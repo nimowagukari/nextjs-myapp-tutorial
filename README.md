@@ -10,7 +10,7 @@
 - [ ] Material Design を試す
   - [x] Button
   - [ ] TextField
-    - [ ] select prop
+    - [x] select prop
   - [ ] Menu, MenuList, MenuItem
 
 ### Tailwind CSS
