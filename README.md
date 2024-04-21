@@ -9,6 +9,9 @@
 - [x] markdown 系の Extension 追加
 - [ ] Material Design を試す
   - [x] Button
+  - [ ] TextField
+    - [ ] select prop
+  - [ ] Menu, MenuList, MenuItem
 
 ### Tailwind CSS
 
@@ -26,6 +29,7 @@
 - [x] クライアントコンポーネント境界でファイルを分ける
 - [x] ページごとにタイトルを変える
 - [x] Image コンポーネントを試す
+- [x] フォント変更
 - [ ] useState 弄くり倒す
 - [ ] tutorials ページ共通の概要コンポーネントを追加
   - ページ概要
