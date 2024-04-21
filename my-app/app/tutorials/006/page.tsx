@@ -11,7 +11,12 @@ export default function Page() {
     <>
       <h1>View Image</h1>
       <div className="w-[500px] h-[500px] relative">
-        <Image src={Pic} alt="浮かれる人のイラスト(女性)" fill={true} className="object-contain"></Image>
+        <Image
+          src={Pic}
+          alt="浮かれる人のイラスト(女性)"
+          fill={true}
+          className="object-contain"
+        ></Image>
       </div>
     </>
   );

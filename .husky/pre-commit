@@ -1,0 +1,4 @@
+
+if cd ./my-app; then
+    npx lint-staged
+fi
