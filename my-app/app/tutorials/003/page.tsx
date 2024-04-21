@@ -36,7 +36,7 @@ function IngredientList({
 
 export default function Page() {
   const listItems = ingredients.map((i) => {
-    return <IngredientList id={i.id} type={i.type} name={i.name} />;
+    return <IngredientList key={i.id} id={i.id} type={i.type} name={i.name} />;
   });
 
   return (

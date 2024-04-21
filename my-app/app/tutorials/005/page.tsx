@@ -33,8 +33,8 @@ type buttonState = {
 export default function Page() {
   const numOfButtons = 9;
   const buttonStates: buttonState[] = [];
+  const [count, setCount] = useState(0);
   for (let i = 0; i < numOfButtons; i++) {
-    const [count, setCount] = useState(0);
     buttonStates.push({ count: count, setCount: setCount });
   }
   const MyButtons = new Array(numOfButtons).fill(0).map((_, i) => {
