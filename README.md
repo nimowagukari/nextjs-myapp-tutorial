@@ -7,12 +7,21 @@
 ### 未分類
 
 - [x] markdown 系の Extension 追加
-- [ ] Material Design を試す
+- [ ] sourcemap 有効化
+
+### MUI 
+
+- [ ] Component 検証
   - [x] Button
   - [ ] TextField
     - [x] select prop
-  - [ ] Menu, MenuList, MenuItem
-- [ ] sourcemap 有効化
+  - [x] Menu, MenuList, MenuItem
+- [x] Theme 検証
+  - [x] Theme Object の理解と活用
+  - [x] createTheme() の検証
+  - [x] Theme の適用
+    - [x] Component の sx prop での指定
+    - [x] ThemeProvider での指定
 
 ### Tailwind CSS
 
