@@ -9,7 +9,7 @@
 - [x] markdown 系の Extension 追加
 - [ ] sourcemap 有効化
 
-### MUI 
+### MUI
 
 - [ ] Component 検証
   - [x] Button
