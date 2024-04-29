@@ -1,6 +1,7 @@
 import Link from "next/link";
 import process from "process";
 import fs from "fs";
+import { Typography } from "@mui/material";
 
 const tutorial_links = fs.readdirSync(process.cwd() + "/app/tutorials");
 
@@ -15,9 +16,12 @@ export default function Page() {
 
   return (
     <>
-      <h1 className="text-4xl font-bold">Hello, Next.js!</h1>
-      <div className="text-red-500">hogehoge</div>
-      <ul title="Page Links">{listItems}</ul>
+      <main>
+        <Typography variant="h3">Hello, Next.js!</Typography>
+        <div className="m-4">
+          <ul title="Page Links">{listItems}</ul>
+        </div>
+      </main>
     </>
   );
 }
