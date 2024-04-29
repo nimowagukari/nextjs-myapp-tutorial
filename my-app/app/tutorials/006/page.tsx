@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Pic from "../../../public/pose_dance_ukareru_woman.png";
+import { Typography } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "View Image",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>View Image</h1>
+      <Typography variant="h3">View Image</Typography>
       <div className="w-[500px] h-[500px] relative">
         <Image
           src={Pic}

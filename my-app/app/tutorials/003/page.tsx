@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import clsx from "clsx";
 import { Metadata } from "next";
 
@@ -41,7 +42,7 @@ export default function Page() {
 
   return (
     <>
-      <h1>Filtering Array</h1>
+      <Typography variant="h3">Filtering Array</Typography>
       <ul className="list-disc">{listItems}</ul>
     </>
   );

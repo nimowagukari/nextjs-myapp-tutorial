@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Hello, Next.js!</h1>
+      <Typography variant="h3">Hello, Next.js!</Typography>
     </>
   );
 }

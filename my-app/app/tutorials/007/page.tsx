@@ -1,4 +1,4 @@
-import { ListItemText, MenuItem, TextField } from "@mui/material";
+import { ListItemText, MenuItem, TextField, Typography } from "@mui/material";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,10 +11,11 @@ const selectValues = [
   { label: "label3", value: "value3" },
 ];
 
+// TODO: display: block が機能しない事象の調査と解消
 export default function Page() {
   return (
     <>
-      <h1>MUI Input: TextField</h1>
+      <Typography variant="h3">MUI Input: TextField</Typography>
       <TextField
         className="block m-4"
         label="outlined"

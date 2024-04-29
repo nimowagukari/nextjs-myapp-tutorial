@@ -1,16 +1,23 @@
 import { Metadata } from "next";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "Single Button",
 };
 
+// TODO: display: block が機能しない事象の調査と解消
 function MyButton() {
   return (
     <>
-      <Button variant="text">text button</Button>
-      <Button variant="contained">contained button</Button>
-      <Button variant="outlined">outlined button</Button>
+      <Button className="block" variant="text">
+        text button
+      </Button>
+      <Button className="block" variant="contained">
+        contained button
+      </Button>
+      <Button className="block" variant="outlined">
+        outlined button
+      </Button>
     </>
   );
 }
@@ -18,7 +25,7 @@ function MyButton() {
 export default function Page() {
   return (
     <>
-      <h1>Single Button</h1>
+      <Typography variant="h3">Single Button</Typography>
       <MyButton />
     </>
   );

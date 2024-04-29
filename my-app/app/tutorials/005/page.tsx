@@ -1,5 +1,6 @@
 "use client";
 
+import { Typography } from "@mui/material";
 import { MouseEventHandler, useState } from "react";
 
 /* 
@@ -51,7 +52,7 @@ export default function Page() {
   });
   return (
     <>
-      <h1>UseState Tutorial</h1>
+      <Typography variant="h3">UseState Tutorial</Typography>
       <div className="m-4 grid grid-rows-3 grid-cols-3 gap-4 [&>*:nth-child(-n+1)]:bg-green-500 [&>*:nth-child(3n+4)]:bg-red-500 [&>*:nth-child(n+2):nth-child(-n+3)]:bg-blue-500">
         {MyButtons}
       </div>
