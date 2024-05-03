@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <>
       <Typography variant="h3">View Image</Typography>
-      <div className="w-[500px] h-[500px] relative">
+      <div className="w-[300px] h-[300px] relative">
         <Image
           src={Pic}
           alt="浮かれる人のイラスト(女性)"

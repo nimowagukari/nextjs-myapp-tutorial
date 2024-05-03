@@ -43,7 +43,9 @@ export default function Page() {
   return (
     <>
       <Typography variant="h3">Filtering Array</Typography>
-      <ul className="list-disc">{listItems}</ul>
+      <div className="ml-8">
+        <ul className="list-disc">{listItems}</ul>
+      </div>
     </>
   );
 }
