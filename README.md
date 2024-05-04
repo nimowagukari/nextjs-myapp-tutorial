@@ -8,6 +8,7 @@
 
 - [x] markdown 系の Extension 追加
 - [ ] sourcemap 有効化
+- [ ] PageSpeed Insights で良いスコアを取る
 
 ### MUI
 

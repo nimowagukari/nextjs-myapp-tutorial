@@ -1,9 +1,9 @@
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { Roboto } from "next/font/google";
-import { Typography } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import Nav from "./components/nav";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -37,7 +37,7 @@ export default function RootLayout({
           </header>
           <div className="flex h-[500px]">
             <div className="max-md:hidden min-w-[300px] w-[300px] p-4 bg-red-200">
-              nav
+              <Nav />
             </div>
             <div className="w-full p-4">{children}</div>
           </div>
