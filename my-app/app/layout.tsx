@@ -1,8 +1,8 @@
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { Roboto } from "next/font/google";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import { tutorial_links } from "./lib/links";
+import Header from "./components/header";
 import Nav from "./components/nav";
 
 const roboto = Roboto({
@@ -27,17 +27,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.className} antialiased`}>
         <AppRouterCacheProvider>
-          <header className="flex w-full h-[64px] bg-green-200">
-            <div className="w-[64px] md:hidden content-center m-auto">
-              <IconButton size="large">
-                <MenuIcon />
-              </IconButton>
-            </div>
-            <div className="w-full">header</div>
-          </header>
+          <Header tutorial_links={tutorial_links} />
           <div className="flex h-[500px]">
             <div className="max-md:hidden min-w-[300px] w-[300px] p-4 bg-red-200">
-              <Nav />
+              <Nav tutorial_links={tutorial_links} />
             </div>
             <div className="w-full p-4">{children}</div>
           </div>

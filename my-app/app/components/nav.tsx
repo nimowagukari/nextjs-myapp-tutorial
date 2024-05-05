@@ -1,13 +1,11 @@
-import fs from "fs";
+"use client";
+
 import Link from "@mui/material/Link";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import process from "process";
 import { ListItemText } from "@mui/material";
 
-const tutorial_links = fs.readdirSync(process.cwd() + "/app/tutorials");
-
-export default function Nav() {
+export default function Nav({ tutorial_links }: { tutorial_links: string[] }) {
   const links = tutorial_links.map((link) => {
     return (
       <ListItem key={link} sx={{ px: 1, py: 0.5 }}>
